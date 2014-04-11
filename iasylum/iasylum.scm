@@ -153,6 +153,8 @@
    amb-possibility-list
    alist-swap
    -to_
+   list-of-type?
+   alist?
    )
 
   ;; This makes scm scripts easier in the eyes of non-schemers.

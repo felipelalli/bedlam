@@ -4,7 +4,7 @@ MAINTAINER Igor Hjelmstrom Vinhas Ribeiro <igorhvr@iasylum.net>
 ENV TERM xterm
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN echo "2025-07-17" > /last_bedlam_base_image_update
+RUN echo "2026-01-20" > /last_bedlam_base_image_update
 RUN cd /var/lib/apt ; rm -rf * 
 RUN apt-get -y update --fix-missing
 RUN apt-get -y install man-db
@@ -35,7 +35,7 @@ RUN apt-get -y install ntpdate ntp
 RUN apt-get -y install sysstat
 RUN apt-get -y install tor netcat-openbsd ncat socat tcpdump traceroute dnsutils
 RUN apt-get -y install secure-delete
-RUN apt-get -y install strace lsof
+RUN apt-get -y install strace lsof inotify-tools
 RUN apt-get -y install make
 
 RUN apt-get -y install openjdk-11-jdk

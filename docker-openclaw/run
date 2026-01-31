@@ -6,6 +6,7 @@
 # - expose gateway/dashboard ports explicitly (avoid random -P)
 
 sudo docker run \
+  --name openclaw \
   --hostname openclaw \
   --privileged \
   -it \
@@ -16,3 +17,4 @@ sudo docker run \
   -p 18789:18789 \
   -p 18793:18793 \
   igorhvr/openclaw /bin/zsh -i
+
